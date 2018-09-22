@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Formularz</title>
@@ -7,17 +8,47 @@
 
 <body>
 
-	<form action="">
+	<form action="https://formspree.io/szaluckim@gmail.com" method="POST">
+
+		<label for="imie">Imię</label>
+		<input type="text" name="imie" id="imie"> <br><br>
+
+		<label for="nazwisko">Nazwisko</label>
+		<input type="text" name="nazwisko" id="nazwisko"> <br><br>
+
+		<label for="mail">E-mail</label>
+		<input type="email" name="mail" id="mail"> <br><br>
+
+		<label for="phone">Telefon</label>
+		<input type="number" name="quanity" id="phone"> <br><br>
 
 
+		<label for="textarea">Napisz wiadomość</label> <br>
+		<textarea maxlength="1000" name="message" id="textarea"></textarea> <br><br>
 
+
+		Wybierz płeć <br>
+
+		<label for="male">Mężczyzna</label>
+		<input type="radio" name="gender" id="male"><br>
+
+		<label for="female">Kobieta</label>
+		<input type="radio" name="gender" id="female">
+
+		<br><br>
+
+		<label for="country">Wybierz kraj</label> <br>
+		<select name="select" id="country">
+			<option value="value1">Polska</option>
+			<option value="value2">Niemcy</option>
+			<option value="value3">Wielka Brytania</option>
+		</select>
 
 		<input type="submit" value="wyślij">
 
 
 	</form>
 
-
-
 </body>
+
 </html>
